@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true">
+		<!--点击时-->
+        <shape>
+            <solid android:color="#403CA8FE"/>
+            <corners android:radius="280dp"/>
+            <stroke
+                android:width="1.5dp"
+                android:color="#403CA8FE"/>
+
+        </shape>
+    </item>
+    <item
+        android:state_pressed="false">
+		<!--未点击时-->
+			
+        <shape>
+			<gradient android:centerX="2" android:centerY="2" /><!--与底层的垂直距离（阴影的效果）-->
+			<padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp" />
+  
+            <solid android:color="#FFFFFF"/>
+            <corners android:radius="200dp"/>
+            <stroke
+                android:width="1.5dp"
+                android:color="#3CA8FE"/>
+
+        </shape>
+    </item>
+</selector>
+

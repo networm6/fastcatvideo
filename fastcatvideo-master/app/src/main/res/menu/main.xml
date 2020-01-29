@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/我的"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+		android:icon="@drawable/image_3"
+         />
+    <item
+        android:id="@+id/mode6"
+        android:checked="false"
+        android:orderInCategory="600"
+        app:showAsAction="never"
+        android:title="@string/tabmode6" />
+
+    <item
+        android:id="@+id/mode7"
+        android:checked="false"
+        android:orderInCategory="700"
+        app:showAsAction="never"
+        android:title="@string/tabmode7" />
+
+</menu>

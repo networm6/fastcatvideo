@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="#8376F5">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="@drawable/bk"
+		android:id="@+id/firstLinearLayout2"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:visibility="gone">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:maxLength="17"
+			android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+			android:hint="填写邀请码！"
+			android:layout_height="wrap_content"
+			android:textColorHint="#8F8F8F"
+			android:id="@+id/firstEditText1"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:background="#4BAE4F"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/Widget.AppCompat.Button.Borderless"
+			android:theme="@style/Theme.AppCompat.Light"
+			android:gravity="center">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="我已经填写，进入"
+				android:onClick="邀请1"
+				android:textColor="#FFFFFF"
+				android:background="#00000000"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			style="@style/Widget.AppCompat.Button.Borderless"
+			android:theme="@style/Theme.AppCompat.Light"
+			android:layout_height="wrap_content"
+			android:background="#E81D62"
+			android:padding="10dp"
+			android:layout_marginTop="10dp">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="未填写，直接进入"
+				android:onClick="进入1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#FFFBFB"
+				android:background="#0460B7"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="填写邀请码会有相应奖励（sex0升级至sex1），拥有相应特权，没填写就不会有"
+				android:textColor="#F4F4F4"/>
+
+		</LinearLayout>
+
+		<WebView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:id="@+id/firstwebview1"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="男性天堂-性餐厅"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textSize="32sp"
+		android:gravity="center"
+		android:textColor="#FFFFFF"
+		android:layout_marginBottom="35dp"
+		android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+

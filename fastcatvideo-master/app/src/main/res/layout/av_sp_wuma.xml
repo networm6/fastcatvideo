@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top"
+	android:background="@android:color/white"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="?attr/actionBarSize"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:background="@color/colorPrimary"
+		android:fitsSystemWindows="true"
+		android:elevation="4dp"
+		android:id="@+id/avspwumaLinearLayout1">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:onClick="结束"
+			android:background="@drawable/biaot">
+
+			<TextView
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="21dp"
+				android:layout_width="21dp"
+				android:background="@drawable/image_1"
+				android:layout_marginStart="6dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:textColor="#FAFAFA"
+				android:textSize="17sp"
+				android:shadowColor="#888888"
+				android:shadowRadius="2"
+				android:text="视频详情"
+				android:layout_marginEnd="3dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center|end">
+
+			<TextView
+				android:layout_width="73dp"
+				android:layout_height="match_parent"
+				android:text="线路"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#FFFEFE"
+				android:layout_marginEnd="10dp"
+				android:textSize="17sp"
+				android:gravity="center|end"
+				android:background="@drawable/biaot"
+				android:onClick="线路"
+				android:id="@+id/avspwumaTextView2"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#000000"
+			android:gravity="center">
+
+			<ProgressBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+		<FrameLayout
+			android:id="@+id/webViewa"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		</FrameLayout>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="视频链接(可自己复制到浏览器缓存)"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_marginTop="10dp"
+		android:id="@+id/avspwumaTextView1"/>
+
+	<RelativeLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="wrap_content"
+			android:background="#00000000"
+			android:textSize="10sp"
+			android:id="@+id/avspwumaEditText1"
+			android:textColor="#D54C80"
+			android:layout_marginStart="67dp"/>
+
+		<Button
+			android:layout_width="67dp"
+			android:layout_height="wrap_content"
+			android:text="缓存"
+			android:onClick="yell"
+			android:background="@drawable/bu"/>
+
+	</RelativeLayout>
+
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:descendantFocusability="blocksDescendants"
+		card_view:cardCornerRadius="5dp"
+		android:layout_marginTop="10dp"
+		card_view:cardUseCompatPadding="true"
+		android:background="#FFFFFF">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="80dp"/>
+
+	</android.support.v7.widget.CardView>
+
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:descendantFocusability="blocksDescendants"
+		card_view:cardCornerRadius="5dp"
+		android:layout_marginTop="7dp"
+		card_view:cardUseCompatPadding="true"
+		android:background="#FFFFFF">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="80dp"/>
+
+	</android.support.v7.widget.CardView>
+
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="7dp"
+		android:layout_width="match_parent"
+		android:descendantFocusability="blocksDescendants"
+		card_view:cardCornerRadius="5dp"
+		card_view:cardUseCompatPadding="true"
+		android:background="#FFFFFF">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="80dp"/>
+
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:background="@drawable/heng"
+		android:elevation="3dp"
+		android:layout_height="wrap_content"
+		android:layout_width="300dp"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="20dp">
+
+		<LinearLayout
+			android:layout_height="42dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_marginTop="15dp"
+			android:gravity="center">
+
+			<TextView
+				android:text=""
+				android:layout_height="match_parent"
+				android:layout_width="7dp"
+				android:background="#009688"/>
+
+			<TextView
+				android:text="选择线路"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_margin="10dp"
+				android:id="@+id/xiaohenglayoutzhucheTextView1"
+				android:textColor="#009688"/>
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="right|center">
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="线路①"
+			android:layout_marginTop="10dp"
+			android:background="#00000000"
+			android:id="@+id/avstringButton1"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="线路②"
+			android:background="#00000000"
+			android:id="@+id/avstringButton2"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="取消"
+			android:background="#00000000"
+			android:id="@+id/avstringButton4"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
+			android:id="@+id/huiyuanLinearLayout1"
+			android:visibility="gone">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="1-你把你的云码发送给作者\n2-告诉作者你开通多久\n3-然后作者会给你相应的开通密码\n\n  3.88元/月   40元/年"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textSize="14sp"
+				android:textColor="#FB533E"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="复制云码并联系作者"
+				android:background="#00000000"
+				android:textColor="#636363"
+				android:id="@+id/huiyuanButton3"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="︿收起"
+				android:background="#00000000"
+				android:gravity="end"
+				android:id="@+id/huiyuanButton4"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

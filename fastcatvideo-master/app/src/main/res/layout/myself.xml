@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="top|center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="?attr/actionBarSize"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:background="@color/colorPrimary"
+		android:elevation="4dp"
+		android:id="@+id/biaotqq">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:onClick="结束"
+			android:background="@drawable/biaot">
+
+			<TextView
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="21dp"
+				android:layout_width="21dp"
+				android:background="@drawable/image_1"
+				android:layout_marginStart="6dp"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:textColor="#FAFAFA"
+				android:textSize="17sp"
+				android:shadowColor="#888888"
+				android:shadowRadius="2"
+				android:text="我的资料"
+				android:layout_marginEnd="3dp"
+				android:id="@+id/biaoqingTextView1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center">
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="center|start">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="bottom">
+
+			<Button
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:background="@drawable/image_5"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp">
+
+				<TextView
+					android:layout_width="38dp"
+					android:layout_height="20dp"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:background="#EFB83B"
+					android:textColor="#FFFCFC"
+					android:id="@+id/self特权"
+					android:gravity="center"/>
+
+				<ProgressBar
+					android:layout_width="match_parent"
+					style="?android:attr/progressBarStyleHorizontal"
+					android:layout_height="wrap_content"
+					android:id="@+id/selfbar"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Text"
+					android:id="@+id/self信息"
+					android:textSize="12sp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="ps:邀请一个好友加4点经验，他进入时必须填写你的邀请码"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:paddingStart="10dp"/>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="51dp"
+			android:gravity="center|start">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="我邀请码"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginStart="10dp"
+				android:id="@+id/self码"
+				android:textSize="17sp"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="51dp"
+			android:gravity="center|start"
+			android:onClick="看特权">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="查看特权"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginStart="10dp"
+				android:textSize="17sp"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="51dp"
+			android:gravity="center|start"
+			android:onClick="分享">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="QQ分享邀请"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginStart="10dp"
+				android:textSize="17sp"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="51dp"
+			android:gravity="center|start"
+			android:onClick="图片">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="保存图片邀请"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginStart="10dp"
+				android:textSize="17sp"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
